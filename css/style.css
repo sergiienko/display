@@ -20,7 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 
-h1 {  }
+h1 {
+	font-size: 30px;
+}
 
 h2 {
 	font-size: 24px;
@@ -280,12 +282,16 @@ textarea {
 /* Slider */
 
 .ba-slider {
+	position: relative;
 	margin-top: 30px;
 	overflow: hidden;
 	text-align: center;
 }
 
 .ba-slider__carousel {
+	position: relative;
+	left: -450%; top: 0;
+	width: 1000%;
 	height: 220px;
 	overflow: hidden;
 	font-size: 0;
@@ -296,6 +302,10 @@ textarea {
 	display: inline-block;
 	margin: 0 10px;
 	opacity: 0.57;
+}
+
+.ba-slider .ba-active {
+	opacity: 1;
 }
 
 .ba-slider__item:before {
@@ -355,6 +365,93 @@ textarea {
 	background-position: -21px -31px;
 }
 
+/* Page title */
+
+.ba-page-title {
+	background: #2ECC71;
+	padding: 35px 0;
+}
+
+.ba-page-title__text {
+	color: #FFF;
+	margin: 0;
+}
+
+/* Portfolio */
+
+.ba-portfolio {
+	padding: 50px 0;
+}
+
+.ba-filter {
+	font-size: 0;
+	margin-bottom: 30px;
+}
+
+.ba-filter a {
+	color: #8A8888;
+	font: 400 18px/1.2 'Novecentosanswide-DemiBold', Arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.ba-filter a:hover {
+	color: #2ECC71;
+}
+
+.ba-filter a:before {
+	content: '/';
+	margin: 0 10px;
+}
+
+.ba-filter a:first-child:before {
+	content: none;
+}
+
+.ba-toggle-view__btn {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../img/icons/view.png) no-repeat 50%;
+}
+
+.ba-toggle-view__btn_grid {
+	background-position: 0 -15px;
+}
+
+.ba-toggle-view__btn_list {
+	background-position: -15px 0;
+}
+
+.ba-toggle-view__btn_list:hover {
+	background-position: -15px -15px;
+}
+
+.ba-portfolio__work {
+	margin-top: 20px;
+}
+
+.ba-portfolio__work a {
+	display: block;
+	position: relative;
+}
+
+.ba-portfolio__work a:hover:before {
+	content: '';
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	background: #FFF;
+	opacity: 0.5;
+}
+
+.ba-portfolio__work a:hover:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	background: url(../img/icons/link.svg) no-repeat 50%;
+}
+
 /* Footer */
 
 .ba-footer {
@@ -409,7 +506,7 @@ textarea {
 }
 
 .ba-footer__menu li:first-child:before {
-	content: '';
+	content: none;
 }
 
 .ba-footer__menu a:hover {

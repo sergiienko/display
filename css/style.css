@@ -456,6 +456,12 @@ textarea {
 	background: url(../img/icons/link.svg) no-repeat 50%;
 }
 
+/* Map */
+
+.ba-map {
+	height: 500px;
+}
+
 /* Footer */
 
 .ba-footer {

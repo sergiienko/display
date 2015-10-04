@@ -395,6 +395,10 @@ textarea {
 	text-transform: uppercase;
 }
 
+.ba-filter .ba-current {
+	color: #2ECC71;
+}
+
 .ba-filter a:hover {
 	color: #2ECC71;
 }

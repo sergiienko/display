@@ -506,10 +506,76 @@ address {
 	text-align: right;
 }
 
+/* About */
+
+.ba-about {
+	padding: 40px 0 0;
+}
+
+.ba-about__photo {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+/* Service */
+
+.ba-service__container {
+	background: #EFEFEF;
+}
+
+.ba-service__title {
+	margin-bottom: 30px;
+}
+
+.ba-service__icon {
+	padding: 50px 0 45px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+	color: #737373;
+}
+
+.ba-service__icon:hover {
+	background: #DADADA;
+	color: #423E3E;
+}
+
+.ba-service__icon svg {
+	fill: #737373;
+	height: 58px;
+	width: 50px;
+
+	-webkit-transition: fill .3s ease-in;
+	-moz-transition: fill .3s ease-in;
+	transition: fill .3s ease-in;
+}
+
+.ba-service__icon:hover svg {
+	fill: #423E3E;
+}
+
+.ba-service__icon span {
+	display: block;
+	margin-top: 20px;
+}
+
+/* Additional */
+
+.ba-additional {
+	padding: 20px 0 20px;
+}
+
+.ba-additional ul {
+	color: #8A8888;
+	list-style-image: url(../img/icons/bullet.svg);
+}
+
 /* Footer */
 
 .ba-footer {
-
+	padding: 0 0 10px;
 }
 
 .ba-footer__cta {
